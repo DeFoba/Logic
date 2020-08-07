@@ -1,0 +1,40 @@
+:root {
+    --page-background: rgb(211, 209, 209);
+    --canvas-background: #fff;
+    --box-background-grey: #494545;
+    --box-background-red: #7fcc68;
+}
+
+html, body {
+    background-color: var(--page-background);
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    position: fixed;
+    background-color: var(--canvas-background);
+    height: 300px;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 0 1vw #000;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.game-box {
+    width: 98px;
+    height: 98px;
+    border: 1px solid #000;
+}
+
+.game-box-grey {
+    background-color: var(--box-background-grey);
+}
+
+.game-box-red {
+    background-color: var(--box-background-red);
+}
