@@ -18,12 +18,16 @@ for (let i = 0; i < 21; i++) {
 }
 
 function checkWin() {
+    let gameTitle = document.getElementById('status');
     let allGameBoxes = document.getElementsByClassName('game-box');
     for (key of allGameBoxes) {
-        if (key.className == 'game-box game-box-grey') return;
+        if (key.className == 'game-box game-box-grey') {
+            gameTitle.className = 'false';
+            return;
+        }
     }
-    alert('You won!');
-    location.reload();
+    gameTitle.className = 'true';
+    // location.reload();
 }
 
 function changeGameBoxColor(target) {
