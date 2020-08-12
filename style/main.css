@@ -4,6 +4,7 @@
     --box-background-grey: #494545;
     --box-background-red: #79b467;
     --title-color: #70b45c;
+    --change-scale: scale(0);
 }
 
 html, body {
@@ -17,18 +18,20 @@ html, body {
     position: fixed;
     top: 1vw;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) var(--change-scale);
     font-size: 3vw;
     transition: 0.3s;
 }
 
 .false {
-    transform: translateX(-50%) scale(0);
+    transform: translateX(-50%);
+    --change-scale: scale(0);
     filter: opacity(0);
 }
 
 .true {
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%);
+    --change-scale: scale(1);
     filter: opacity(1);
 }
 

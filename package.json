@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "**/*"
+    "start": "browser-sync start --server --files \"*/**/*.*\""
   },
-  "keywords": [],
   "author": "",
   "license": "ISC"
 }
